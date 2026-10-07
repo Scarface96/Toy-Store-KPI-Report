@@ -1,9 +1,22 @@
 # 🧸 Toy Store KPI Report
 
+**Retail Business Intelligence | Power BI • DAX • Data Modeling • Revenue & Profit KPIs**
+
 A **Power BI** report tracking the key performance indicators of a toy store chain across 50 stores — orders, revenue and profit — with trends over time and breakdowns by product category.
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square)
+
+## Business value
+
+Bring sales, products and calendar data into an interactive retail performance report. KPI cards, category comparisons and time drill-down help stakeholders examine revenue, profitability and sales activity.
+
+### Questions this project addresses
+
+- How do revenue and profit change over time?
+- Which product categories contribute the most sales?
+- What happens to the KPIs when a category filter is applied?
+
 
 ## 📋 Overview
 
@@ -64,3 +77,14 @@ Data modelling (star schema) · DAX measures · KPI visuals · date hierarchies 
 ---
 
 👤 **Tony Mulunda** — [GitHub @Scarface96](https://github.com/Scarface96)
+
+## Interpretation & limitations
+
+Transaction count and units sold are different measures. Reconcile report totals with the source files before reuse, and verify the grain and keys of the store dimension before extending store-level analysis.
+
+## Explore the analytics portfolio
+
+- [sql_retail_sales_p1](https://github.com/Scarface96/sql_retail_sales_p1)
+- [HR-Analysis-Dashboard](https://github.com/Scarface96/HR-Analysis-Dashboard)
+- [Global-CO2-Emissions-Dashboard](https://github.com/Scarface96/Global-CO2-Emissions-Dashboard)
+- [B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc.](https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc.)
