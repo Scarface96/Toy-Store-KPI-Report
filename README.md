@@ -88,3 +88,7 @@ Transaction count and units sold are different measures. Reconcile report totals
 - [HR-Analysis-Dashboard](https://github.com/Scarface96/HR-Analysis-Dashboard)
 - [Global-CO2-Emissions-Dashboard](https://github.com/Scarface96/Global-CO2-Emissions-Dashboard)
 - [B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc.](https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc.)
+
+## About This Project
+
+A Power BI business-intelligence project designed to give retail stakeholders a concise view of orders, revenue and profitability. It demonstrates star-schema data modelling, DAX measures, KPI design, interactive filtering and management-focused dashboard storytelling.
