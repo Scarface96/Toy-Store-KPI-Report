@@ -9,6 +9,14 @@ A **Power BI** report tracking the key performance indicators of a toy store cha
 
 Management wants a single page that answers: *How much are we selling, how profitable is it, and which product categories drive the business?* This report brings together over **829,000 sales transactions** from January 2022 to September 2023 into one interactive view.
 
+## 📈 Results at a Glance
+
+Charts built with Python (pandas + matplotlib) from the data files in this repo.
+
+<p align="center"><img src="docs/images/monthly_revenue.png" alt="Monthly revenue line chart, January 2022 to September 2023" width="85%"></p>
+
+<p align="center"><img src="docs/images/category_revenue.png" alt="Revenue by product category" width="85%"></p>
+
 ## 🗂️ Data Model
 
 Star schema with one fact table and three dimension tables:
