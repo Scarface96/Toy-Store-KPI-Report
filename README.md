@@ -1,11 +1,30 @@
 # 🧸 Toy Store KPI Report
 
-**Retail Business Intelligence | Power BI • DAX • Data Modeling • Revenue & Profit KPIs**
+**Retail Business Intelligence | Power BI • DAX • Python • Forecasting • Revenue & Profit KPIs**
 
 A **Power BI** report tracking the key performance indicators of a toy store chain across 50 stores — orders, revenue and profit — with trends over time and breakdowns by product category.
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+## 🌐 Live Report
+
+**[scarface96.github.io/Toy-Store-KPI-Report](https://scarface96.github.io/Toy-Store-KPI-Report/)**
+
+The Power BI report is still here, and the same data now also drives a Python analysis that publishes an interactive web report, rebuilt by GitHub Actions on every push. No Power BI licence is needed to view it.
+
+**What the Python analysis adds:**
+
+- **Like-for-like growth:** Jan–Sep 2023 vs Jan–Sep 2022. Revenue grew **+31%** but profit only **+16%**.
+- **Margin trend:** profit margin slid from **29.3%** (2022) to **26.2%** (2023) because the mix shifted to low-margin products.
+- **Category drivers:** Art & Crafts more than tripled, while Electronics fell 28% (profit −39%).
+- **Product portfolio map and ABC analysis:** 12 of 35 products earn 72% of profit; Colorbuds alone earns 21%, and its sales halved.
+- **Store spread:** the median store grew +31%, three stores shrank.
+- **Weekday × month heatmap:** Fridays and Saturdays nearly double a Monday; December lifts every day.
+- **Q4 2023 forecast:** three methods compared in a six-month backtest; the most accurate is chosen and the seasonal view is shown alongside it.
 
 ## Business value
 
@@ -58,21 +77,33 @@ Star schema with one fact table and three dimension tables:
 ## 📁 Repository Contents
 
 ```
+├── analysis/
+│   ├── data.py        # Loads the star schema, revenue/profit, like-for-like growth, ABC, stores, heatmap
+│   ├── forecast.py    # Seasonal-naive, Holt and blended forecasts with a backtest
+│   ├── report.py      # Turns the analysis into the interactive web page
+│   └── build.py       # Runs everything and writes site/index.html
+├── tests/             # pytest checks (totals match the Power BI report, growth windows, ABC, forecast)
+├── .github/workflows/deploy.yml   # Test, build and publish to GitHub Pages
 ├── Toy Store KPI Report.pbix   # Power BI report
-├── sales.csv
-├── products.csv
-├── stores.csv
-├── calendar.csv
-└── README.md
+├── sales.csv, products.csv, stores.csv, calendar.csv
+└── requirements.txt
 ```
 
 ## 🚀 How to Use
 
-Download `Toy Store KPI Report.pbix` and open it in **[Power BI Desktop](https://powerbi.microsoft.com/desktop/)** (free, Windows). The data is already loaded in the file; the CSVs are included so you can rebuild or extend the model.
+**Python report:**
+
+```bash
+pip install -r requirements.txt
+python -m pytest            # run the tests
+python -m analysis.build    # build site/index.html
+```
+
+**Power BI:** download `Toy Store KPI Report.pbix` and open it in **[Power BI Desktop](https://powerbi.microsoft.com/desktop/)** (free, Windows). The data is already loaded in the file.
 
 ## 🛠️ Skills Demonstrated
 
-Data modelling (star schema) · DAX measures · KPI visuals · date hierarchies & drill-down · interactive report design
+Data modelling (star schema) · DAX measures · KPI visuals · date hierarchies & drill-down · pandas · like-for-like growth analysis · ABC/Pareto analysis · time-series forecasting with backtesting · Plotly · automated deployment
 
 ---
 
