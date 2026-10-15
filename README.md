@@ -26,6 +26,12 @@ The Power BI report is still here, and the same data now also drives a Python an
 - **Weekday × month heatmap:** Fridays and Saturdays nearly double a Monday; December lifts every day.
 - **Q4 2023 forecast:** three methods compared in a six-month backtest; the most accurate is chosen and the seasonal view is shown alongside it.
 
+## 📊 Tableau & Power BI
+
+The Power BI report is in the repo root. [`bi/`](bi/) adds a **Tableau** kit built on the same data: clean lookup tables, ready-to-paste calculated fields, the matching colour palette, a sheet-by-sheet layout, and the exact numbers the finished workbook should show.
+
+**[Open the build guide →](bi/README.md)**
+
 ## Business value
 
 Bring sales, products and calendar data into an interactive retail performance report. KPI cards, category comparisons and time drill-down help stakeholders examine revenue, profitability and sales activity.
